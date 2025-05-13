@@ -1,0 +1,4 @@
+output.csv
+temp_item.json
+*.log
+*.tmp

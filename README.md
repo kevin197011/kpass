@@ -24,4 +24,4 @@ This Ruby project allows you to **batch import** and **export** login credential
 2. Import credentials from accounts.csv:
    ```bash
     bundle install
-   ```# bitwarden-helper
+   ```

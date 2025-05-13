@@ -10,6 +10,7 @@ require 'time'
 task default: %w[push]
 
 task :push do
+  system 'rubocop -a --format simple'
   system 'git add .'
   system "git commit -m 'Update #{Time.now}.'"
   system 'git pull'

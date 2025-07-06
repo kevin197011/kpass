@@ -3,7 +3,7 @@
 require 'csv'
 
 module Kpass
-  class Converter
+  class Keepass
     # Convert a KeePass CSV to Bitwarden CSV
     # @param input_file [String] Path to KeePass CSV
     # @param output_file [String] Path to Bitwarden CSV

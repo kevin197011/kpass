@@ -6,7 +6,7 @@ module Kpass
   module CLI
     USAGE = <<~HELP
       Usage:
-        kpass convert <input.csv> <output.csv>   # KeePass → Bitwarden CSV
+        kpass keepass <input.csv> <output.csv>   # KeePass → Bitwarden CSV
         kpass import <input.csv>                 # Import CSV to Bitwarden vault
         kpass export <output.csv>                # Export Bitwarden vault to CSV
         kpass --help
@@ -24,14 +24,14 @@ module Kpass
       cmd, *args = argv
 
       case cmd
-      when 'convert'
+      when 'keepass'
         if args.size != 2
           warn USAGE
           return 1
         end
         input_file, output_file = args
         begin
-          Kpass::Converter.convert(input_file, output_file)
+          Kpass::Keepass.convert(input_file, output_file)
           puts "✅ Conversion complete: #{output_file}"
           0
         rescue StandardError => e

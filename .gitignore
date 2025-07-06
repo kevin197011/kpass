@@ -1,5 +1,4 @@
-output.csv
-output_bw.csv
+*.csv
 temp_item.json
 *.log
 *.tmp

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'kpass/converter'
+require_relative 'kpass/keepass'
 require_relative 'kpass/bitwarden'
 require_relative 'kpass/cli'
 require_relative 'kpass/version'

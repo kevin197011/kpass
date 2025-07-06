@@ -3,3 +3,11 @@ output_bw.csv
 temp_item.json
 *.log
 *.tmp
+
+.cursor
+
+/pkg/
+/.bundle/
+/vendor/
+*.gem
+.DS_Store
